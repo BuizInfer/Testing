@@ -154,7 +154,7 @@ function render() {
 }
 
 let loader = new STLLoader();
-loader.load('example5.stl', (model) => {
+loader.load('/example5.stl', (model) => {
     object = new THREE.Mesh(
         model,
         new THREE.MeshLambertMaterial({ color: 0x5e6160 })
